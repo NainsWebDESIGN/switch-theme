@@ -1,9 +1,7 @@
 <div class="iss-block">
-  <mat-slide-toggle (change)="switchTheme()" [(ngModel)]="isDarkTheme">
-      Swith Theme
-  </mat-slide-toggle>
+  <button (click)="cssLoder.switchCSS('default-theme.css')">default</button>
+  <button (click)="cssLoder.switchCSS('dark-theme.css')">dark</button>
 </div>
-
 
 <div class="bs-btn-group p-3">
   <h3>bs-btn-group</h3>
