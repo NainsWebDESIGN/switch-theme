@@ -24,16 +24,16 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "extractCss": true,
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": ["src/favicon.ico"],
             "styles": [
               "src/styles.scss",
               {
-                "input": "src/assets/theme/default-theme.scss",
+                "input": "src/scss/default-theme.scss",
                 "bundleName": "default-theme",
                 "inject": false
               },
               {
-                "input": "src/assets/theme/dark-theme.scss",
+                "input": "src/scss/dark-theme.scss",
                 "bundleName": "dark-theme",
                 "inject": false
               }

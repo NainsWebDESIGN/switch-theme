@@ -31,10 +31,10 @@ export class AppComponent implements OnInit {
   switchTheme(): void {
     if (this.isDarkTheme) {
       this.cssLoder.switchCSS('dark-theme.css');
-      localStorage.setItem('theme', 'dark-theme');
+      localStorage.setItem('scss', 'dark-theme');
     } else {
       this.cssLoder.switchCSS('default-theme.css');
-      localStorage.setItem('theme', 'default-theme');
+      localStorage.setItem('scss', 'default-theme');
     }
   }
 
