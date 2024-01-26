@@ -13,23 +13,23 @@ export class CSSLoaderService {
         themeLink.href = cssPath;
     }
 
-    public loadDefaultCSS(cssPath: string) {
-        if (this.loadLocalStorage()) {
-            switch (this.loadLocalStorage()) {
-                case 'dark-theme':
-                    this.switchCSS('dark-theme.css');
-                    break;
+    // public loadDefaultCSS(cssPath: string) {
+    //     if (this.loadLocalStorage()) {
+    //         switch (this.loadLocalStorage()) {
+    //             case 'dark-theme':
+    //                 this.switchCSS('dark-theme.css');
+    //                 break;
 
-                case 'default-theme':
-                    this.switchCSS('default-theme.css');
-                    break;
-            }
-        } else {
-            this.switchCSS(cssPath);
-        }
-    }
+    //             case 'default-theme':
+    //                 this.switchCSS('default-theme.css');
+    //                 break;
+    //         }
+    //     } else {
+    //         this.switchCSS(cssPath);
+    //     }
+    // }
 
-    loadLocalStorage(): string {
-        return localStorage.getItem('theme');
-    }
+    // loadLocalStorage(): string {
+    //     return localStorage.getItem('theme');
+    // }
 }
