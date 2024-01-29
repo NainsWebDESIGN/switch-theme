@@ -30,3 +30,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 https://ithelp.ithome.com.tw/articles/10197670
 angular2 預設引入 switch-theme css
+清除快取`npm cache clean --force`
